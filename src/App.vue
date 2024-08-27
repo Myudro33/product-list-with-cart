@@ -1,6 +1,9 @@
 <script setup>
+import ItemContainer from './components/ItemContainer.vue'
 </script>
 
 <template>
-  <h1>hi</h1>
+  <div class="flex xs:flex-col lg:flex-row w-full h-full lg:p-20">
+    <ItemContainer/>
+  </div>
 </template>
