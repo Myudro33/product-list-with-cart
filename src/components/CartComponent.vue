@@ -1,0 +1,19 @@
+<template>
+    <div class="w-full h-20 flex justify-between items-center  border-b border-b-rose-300">
+        <div class="flex flex-col">
+            <h1 class="font-bold">{{ props.name }}</h1>
+            <div class="flex">
+                <p class="text-red font-medium">{{ props.quantity }}x</p>
+                <p class="ml-2">@ ${{ parseFloat(props.price).toFixed(2) }}</p>
+                <p class="ml-2 text-rose-300 font-semibold">${{ props.price*props.quantity }}</p>
+            </div>
+        </div>
+        <RemoveIcon/>
+    </div>
+</template>
+
+<script setup>
+import RemoveIcon from './icons/RemoveIcon.vue';
+
+const props = defineProps(['name','quantity','price'])
+</script>
