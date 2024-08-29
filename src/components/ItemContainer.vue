@@ -10,6 +10,8 @@
         :name="item.name"
         :category="item.category"
         :price="item.price"
+        :quantity="item.quantity"
+        :modal="item.modal"
       />
     </div>
   </div>
