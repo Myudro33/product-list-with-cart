@@ -8,12 +8,13 @@
                 <p class="ml-2 text-rose-300 font-semibold">${{ props.price*props.quantity }}</p>
             </div>
         </div>
-        <RemoveIcon/>
+        <RemoveIcon class="cursor-pointer" @click="()=>itemsStore.removeFromCart(props.id)" />
     </div>
 </template>
 
 <script setup>
 import RemoveIcon from './icons/RemoveIcon.vue';
-
-const props = defineProps(['name','quantity','price'])
+import { useItemsStore } from '@/stores/items';
+const props = defineProps(['name','quantity','price','id'])
+const itemsStore = useItemsStore()
 </script>

@@ -1,4 +1,9 @@
 export default {
+  removeFromCart(id) {
+    const index = (element) => element.id == id
+    const itemIndex = this.cart.findIndex(index)
+    this.cart.splice(itemIndex, 1)
+  },
   decrement(counter, props) {
     const index = (element) => element.id == props.id
     const itemIndex = this.cart.findIndex(index)
