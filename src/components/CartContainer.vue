@@ -6,6 +6,10 @@
             <p class="text-base text-rose-300">Order total </p>
             <h1 class="text-rose-900 text-2xl font-bold">${{  parseFloat(itemsStore.total).toFixed(2) }}</h1>
         </div>
+        <div class="w-full flex flex-col items-center mt-10" v-else>
+            <EmptyCartIcon />
+            <h1 class="text-rose-500 font-bold">Your added items will be appear here</h1>
+        </div>
     </div>
 </template>
 
@@ -13,6 +17,7 @@
 <script setup>
 import CartComponent from './CartComponent.vue';
 import { useItemsStore } from '@/stores/items';
+import EmptyCartIcon from './icons/EmptyCartIcon.vue';
 const itemsStore = useItemsStore()
 
 </script>
