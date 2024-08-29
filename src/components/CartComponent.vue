@@ -13,8 +13,13 @@
 </template>
 
 <script setup>
+import { watch } from 'vue';
 import RemoveIcon from './icons/RemoveIcon.vue';
 import { useItemsStore } from '@/stores/items';
 const props = defineProps(['name','quantity','price','id'])
 const itemsStore = useItemsStore()
+    watch(itemsStore.cart, () => {
+        console.log(itemsStore.calculateTotalPrice());
+    });
+
 </script>

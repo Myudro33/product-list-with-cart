@@ -1,4 +1,7 @@
 export default {
+  calculateTotalPrice() {
+    this.total = this.cart.reduce((total, product) => total + product.price * product.quantity, 0)
+  },
   removeFromCart(id) {
     const index = (element) => element.id == id
     const itemIndex = this.cart.findIndex(index)
@@ -36,5 +39,6 @@ export default {
       this.store[itemIndex] = newObject
       this.cart[cartItemIndex] = newObject
     }
+    this.calculateTotalPrice()
   }
 }
