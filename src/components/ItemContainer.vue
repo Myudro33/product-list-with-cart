@@ -1,7 +1,7 @@
 <template>
-  <div class=" w-full h-full flex flex-col">
+  <div class="w-full h-full flex flex-col">
     <h1 class="lg:text-3xl font-bold text-rose-900">Desserts</h1>
-    <div class="lg:w-full h-full flex flex-wrap gap-5  mt-4">
+    <div class="lg:w-full h-full flex flex-wrap gap-5 mt-4">
       <CardComponent
         v-for="item in itemsStore.store"
         :key="item.id"

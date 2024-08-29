@@ -14,8 +14,8 @@
       </div>
       <div class="w-full bg-red h-full flex justify-between items-center px-3" v-else>
         <MinusIcon @click="decrement" />
-        {{ itemsStore.store[itemIndex]?.quantity}}
-        <PlusIcon @click="increment"/>
+        {{ itemsStore.store[itemIndex]?.quantity }}
+        <PlusIcon @click="increment" />
       </div>
     </div>
     <h1 class="font-thin text-rose-300 mt-5">{{ props.category }}</h1>
@@ -30,24 +30,23 @@ import CartIcon from './icons/CartIcon.vue'
 import MinusIcon from './icons/MinusIcon.vue'
 import PlusIcon from './icons/PlusIcon.vue'
 import { useItemsStore } from '@/stores/items'
-const props = defineProps(['id', 'image', 'name', 'category', 'price','quantity','modal'])
+const props = defineProps(['id', 'image', 'name', 'category', 'price', 'quantity', 'modal'])
 const counter = ref(props.quantity)
 const itemIndex = ref(0)
 const itemsStore = useItemsStore()
 
-const openModal = ()=>{
-  itemsStore.increment(counter.value,props)
+const openModal = () => {
+  itemsStore.increment(counter.value, props)
   const index = (element) => element.id == props.id
   itemIndex.value = itemsStore.data.findIndex(index)
   itemsStore.data[itemsStore.data.findIndex(index)].modal = true
-  
 }
 const decrement = () => {
-  itemsStore.decrement(counter.value,props)
+  itemsStore.decrement(counter.value, props)
   counter.value--
 }
 const increment = () => {
-counter.value++   
-itemsStore.increment(counter.value,props)
+  counter.value++
+  itemsStore.increment(counter.value, props)
 }
 </script>
