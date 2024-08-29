@@ -8,7 +8,7 @@ const itemsStore = useItemsStore()
 </script>
 
 <template>
-  <div :class="{'overflow-hidden':itemsStore.confirmModal,'h-screen':itemsStore.confirmModal}">
+  <div :class="{'overflow-hidden':itemsStore.confirmModal,'h-screen':itemsStore.confirmModal} " class="bg-rose-50">
     <div class="flex xs:flex-col lg:flex-row w-full h-full lg:p-20 ">
       <ItemContainer/>
       <CartContainer/>
