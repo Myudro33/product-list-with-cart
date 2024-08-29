@@ -10,6 +10,7 @@
             <div class="bg-rose-300 w-full h-10 mt-10 flex justify-center items-center rounded-lg">
               <CarbonIcon/>  <h1>This is a <b>carbon-neutral</b> delivery</h1>
             </div>
+            <button @click="itemsStore.modal(true)" class="w-full h-10 rounded-3xl mt-5 text-[#fff] bg-red font-bold">Confirm order</button>
         </div>
         <div class="w-full flex flex-col items-center mt-10" v-else>
             <EmptyCartIcon />

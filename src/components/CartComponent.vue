@@ -19,7 +19,7 @@ import { useItemsStore } from '@/stores/items';
 const props = defineProps(['name','quantity','price','id'])
 const itemsStore = useItemsStore()
     watch(itemsStore.cart, () => {
-        console.log(itemsStore.calculateTotalPrice());
+    itemsStore.calculateTotalPrice();
     });
 
 </script>
