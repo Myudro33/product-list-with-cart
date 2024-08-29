@@ -33,7 +33,7 @@
       "thumbnail": "../src/assets/image-macaron-thumbnail.jpg",
       "mobile": "../src/assets/image-macaron-mobile.jpg",
       "tablet": "../src/assets/image-macaron-tablet.jpg",
-      "desktop": "../src/assets/ https://github.com/Myudro33/product-list-with-cart/blob/main/src/assets/image-macaron-desktop.jpg?raw=true"
+      "desktop": "https://github.com/Myudro33/product-list-with-cart/blob/main/src/assets/image-macaron-desktop.jpg?raw=true"
     },
     "name": "Macaron Mix of Five",
     "category": "Macaron",
@@ -47,7 +47,7 @@
       "thumbnail": "../src/assets/image-tiramisu-thumbnail.jpg",
       "mobile": "../src/assets/image-tiramisu-mobile.jpg",
       "tablet": "../src/assets/image-tiramisu-tablet.jpg",
-      "desktop": "../src/assets/https://github.com/Myudro33/product-list-with-cart/blob/main/src/assets/image-tiramisu-desktop.jpg?raw=true"
+      "desktop": "https://github.com/Myudro33/product-list-with-cart/blob/main/src/assets/image-tiramisu-desktop.jpg?raw=true"
     },
     "name": "Classic Tiramisu",
     "category": "Tiramisu",
@@ -103,7 +103,7 @@
       "thumbnail": "../src/assets/image-brownie-thumbnail.jpg",
       "mobile": "../src/assets/image-brownie-mobile.jpg",
       "tablet": "../src/assets/image-brownie-tablet.jpg",
-      "desktop": "../src/assets/https://github.com/Myudro33/product-list-with-cart/blob/main/src/assets/image-brownie-desktop.jpg?raw=true"
+      "desktop": "https://github.com/Myudro33/product-list-with-cart/blob/main/src/assets/image-brownie-desktop.jpg?raw=true"
     },
     "name": "Salted Caramel Brownie",
     "category": "Brownie",
@@ -117,7 +117,7 @@
       "thumbnail": "../src/assets/image-panna-cotta-thumbnail.jpg",
       "mobile": "../src/assets/image-panna-cotta-mobile.jpg",
       "tablet": "../src/assets/image-panna-cotta-tablet.jpg",
-      "desktop": "../src/assets/https://github.com/Myudro33/product-list-with-cart/blob/main/src/assets/image-panna-cotta-desktop.jpg?raw=true"
+      "desktop": "https://github.com/Myudro33/product-list-with-cart/blob/main/src/assets/image-panna-cotta-desktop.jpg?raw=true"
     },
     "name": "Vanilla Panna Cotta",
     "category": "Panna Cotta",
