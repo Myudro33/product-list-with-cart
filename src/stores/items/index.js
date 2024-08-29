@@ -6,7 +6,8 @@ export const useItemsStore = defineStore('itemsStore', {
     return {
       data,
       cart: [],
-      total: 0
+      total: 0,
+      confirmModal: false
     }
   },
   getters: {
